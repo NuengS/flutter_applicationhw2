@@ -2,29 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 void main() {
-  runApp(SupperHeros());
+  runApp(Supperfriends());
 }
 
-class SupperHeros extends StatelessWidget {
-  final List<String> _heroImages = [
+class Supperfriends extends StatelessWidget {
+  final List<String> _friendImages = [
     "images/Baw.jpg",
     "images/Jiew.jpg",
     "images/Lip.jpg",
     "images/Arm.jpg",
   ];
 
-  final List<String> _heroNames = [
+  final List<String> _friendNames = [
     "บ่าว เทพหลับ",
     "จิ๋ว เทพบีบ",
     "ลิป เทพหาย",
     "อาร์ม ลดยาก",
   ];
 
-  final List<String> _heroDetails = [
-    "ชื่อเดิมคือ แบงค์ Bang (バング) ชายชราผู้เป็นปรมาจารย์แห่งสำนักหมัดสายน้ำทลายหิน โดยพี่ชายของเขาชื่อ บอมบ์ Bomb (ボンブ) ก็ได้เปิดสำนักสอนการต่อสู้เช่นเดียว (หมัดลมหมุนตัดเหล็ก) ถึงแม้ตอนนี้เขาและพี่ชายจะมีอายุอานามมากแล้วก็ตาม แต่ร่างกายและพละกำลังของเขาก็ยังคงเทียบเคียงเมื่อสมัยก่อน เขายังถูกให้ระดับความแข็งแกร่งที่ระดับ 3 จากสมาคมฮีโร่อีกด้วย.",
-    "ไซตามะเป็นฮีโร่ที่แข็งแกร่งที่สุดในโลก ในทุกๆครั้ง เขาจะสามารถสยบคู่ต่อสู้ได้ภายในหมัดเดียว เขาเป็นผู้ชายอายุ 25 มีหัวโล้น เนื่องจากการฝึกแสนหฤโหดเพื่อที่จะได้มาเป็นฮีโร่ ไซตามะเป็นคนที่รักความยุติธรรม เขาได้ช่วยคนบริสุทธิ์จากเหล่าสิ่งมีชีวิตประหลาด และช่วยโลกมาแล้วนับครั้งไม่ถ้วน แต่เขาไม่เคยได้รับผลตอบแทนสักนิดเดียว.",
-    "ฮีโร่หญิงที่มีผมสีเขียวเรืองแสง ระดับ S แรงค์ 2 ผู้ได้รับสมญานามว่า ” Tornado of Terror” หรือที่แปลว่า “พายุทอร์นาโดแห่งความหวาดกลัว” เขามีความสามารถด้านพลังจิตที่แข็งแกร่ง จนสามารถยกสิ่งของหรือก้อนหินหนักๆ ได้ อีกทั้งยังเป็นเป็นพี่สาวของ Fubuki อีกด้วย.",
-    "ศิษย์เอกของไซตามะ เป็นไซบอร์กหรือหุ่นยนตร์ที่เกิดจากการดัดแปลงร่างกายโดย ดร.คุเซโนะ ซึ่งช่วยชีวิตเด็กหนุ่มในวัยเด็กหลังจากเขาต้องสูญเสียครอบครัวจากการเข้าจู่โจมของเหล่าไซบอร์กผู้ชั่วร้ายซึ่ง “บ้านแห่งวิวัฒนาการ” อยู่เบื้องหลัง ในด้านนิสัยนั้น.. เจนอสเป็นคนจริงจังกับทุกสิ่งและไม่ใส่ใจต่อชื่อเสียงผิดกับไซตามะ อย่างไรก็ตาม เจนอสเทิดทูนบูชาไซตามะอย่างมาก และหวังว่าสักวันอาจารย์ของเขาจะถ่ายทอดเคล็ดลับวิชาสู่ความแข็งแกร่งขั้นสุดยอดให้บ้าง.",
+  final List<String> _friendDetails = [
+    "บ่าว ฉายานี้ได้มาจากการที่บ่าวนั้นเวลาว่างเป็นหลับแล้วหลับได้ทั้งวัน ความรู้สึกที่มีต่อบ่าวเป็นเพื่อนที่เพิ่งรู้จักกันตอนขึ้นมหาลัย โดดเรียนก็โดดด้วยกัน เรียนก็เรียนด้วยกัน ไปมอก็ไปด้วยกัน มีปัญหาอะไรบ่าวคอยช่วยอยู่ตลอด เป็นเพื่อนที่ดีมาก รู้สึกขอบคุณที่ได้เป็นเพื่อนกัน.",
+    "จิ๋ว ฉายาที่นี้ได้มาจาก เมื่อก่อนจิ๋วมีอยู่ช่วงเวลาหนึ่งไปเที่ยวถ่ายรูปด้วยกัน หรือไม่ก็ถ่ายด้วยตนเองจิ๋วมักจะปรับแต่งรูปโดยการ ทำให้หน้าใสโดยการลบสิว จุดด่างดำ และบีบช่วงแขนขารวมทั้งลำตัวที่ดูแล้วอ้วนจนเกินไปจนแลดูผอมเพรียว ความรู้สึกที่มีต่อจิ๋ว จิ๋วเป็นคนดี จิ๋วเป็นผู้นำที่ดีคนนึง เป็นคนบ้าๆบอ เป็นคนสบายๆ ชิลล์ๆ สำหรับผมเขาเป็นเพื่อนที่ดีของผมคนหนึ่งเลย.",
+    "ลิป ฉายานี้เกิดจากตัวโซเชียลที่เขาเล่นค่อยข้างลึกลักเข้าถึงอยาก บางทีหายเพราะหลับ บางทีหายเพราะปิดิสภานะการออนนี้คือที่มาของฉายาที่ผมตั้งให้ เขาเป็นเพื่อนที่ไม่ค่อยทุกข์ร้อนพร้อมชิลล์ๆไปกับผม ทั้งงาน ทั้งชีวิตประจำวัน ทำให้ผมรู้สึกสบายใจที่มีเพื่อนที่ทำตัวชิลล์ๆไม่เครียด เขาเป็นเพื่อนที่ดีมากสำหรับผม ถึงจะไม่ค่อยได้คุยอะไรกันเยอะแยะมากมายสักเท่าไหร่ แต่ก็ให้รู้ว่าสนิทกัน .",
+    "อาร์ม ฉายานี้ได้มาจาก อาร์มจะเป็นคนบ่นจะบอกว่าลดน้ำหนักๆ ไปวิ่งบ้าง แต่พอไม่กี่นาทีต่อมาก็ไปเรื่องของกินโดยทันที ทำในร่างในปัจจุบันเทียบไม่ได้กับเมื่อก่อน ความรู้สึกที่มีอาร์มเป็นเพื่อนที่ดี ผมมักจักชอบแกล้งบ่อยๆ เขาก็เป็นเพื่อนที่ดีของผมอีกคนเลย.",
   ];
   @override
   Widget build(BuildContext context) {
@@ -41,14 +41,14 @@ class SupperHeros extends StatelessWidget {
           children: [
             Column(
               children: [
-                Hero(this._heroNames[0], this._heroImages[0],
-                    this._heroDetails[0]),
-                Hero(this._heroNames[1], this._heroImages[1],
-                    this._heroDetails[1]),
-                Hero(this._heroNames[2], this._heroImages[2],
-                    this._heroDetails[2]),
-                Hero(this._heroNames[3], this._heroImages[3],
-                    this._heroDetails[3]),
+                friend(this._friendNames[0], this._friendImages[0],
+                    this._friendDetails[0]),
+                friend(this._friendNames[1], this._friendImages[1],
+                    this._friendDetails[1]),
+                friend(this._friendNames[2], this._friendImages[2],
+                    this._friendDetails[2]),
+                friend(this._friendNames[3], this._friendImages[3],
+                    this._friendDetails[3]),
               ],
             ),
           ],
@@ -58,12 +58,12 @@ class SupperHeros extends StatelessWidget {
   }
 }
 
-class Hero extends StatelessWidget {
-  String _heroName;
-  String _heroImages;
-  String _heroDetail;
+class friend extends StatelessWidget {
+  String _friendName;
+  String _friendImages;
+  String _friendDetail;
 
-  Hero(this._heroName, this._heroImages, this._heroDetail, {Key key})
+  friend(this._friendName, this._friendImages, this._friendDetail, {Key key})
       : super(key: key);
 
   @override
@@ -75,7 +75,7 @@ class Hero extends StatelessWidget {
           SizedBox(height: 10),
           CircleAvatar(
             radius: 50,
-            backgroundImage: AssetImage(this._heroImages),
+            backgroundImage: AssetImage(this._friendImages),
           ),
           SizedBox(height: 10),
           Container(
@@ -84,7 +84,7 @@ class Hero extends StatelessWidget {
               children: [
                 Icon(Icons.thumbs_up_down),
                 Text(
-                  this._heroName,
+                  this._friendName,
                   style: TextStyle(
                       fontSize: 20,
                       color: Colors.red,
@@ -94,7 +94,7 @@ class Hero extends StatelessWidget {
             ),
           ),
           Container(
-            child: Text(this._heroDetail),
+            child: Text(this._friendDetail),
             padding: EdgeInsets.all(25),
           ),
         ],
